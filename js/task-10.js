@@ -29,12 +29,15 @@ function createBoxes(event) {
     divChild.style.backgroundColor = getRandomHexColor();
   }
 
-  // document.refs.controlBtns.append(refs.fatherDiv);
+  refs.controlBtns.append(refs.fatherDiv);
   console.log("+");
+  event.currentTarget.reset();
 }
 
+
+
 function destroyBoxes(event) {
-  
+  refs.fatherDiv.remove();
   console.log("-");
 }
 function getRandomHexColor() {
